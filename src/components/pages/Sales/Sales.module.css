@@ -1,0 +1,62 @@
+.sales_section {
+    padding: clamp(20px, 4vw, 40px) 20px clamp(40px, 8vw, 80px); 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.title {
+    font-size: clamp(24px, 6vw, 64px);
+    font-weight: 700;
+    color: #282828;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.burger_btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+}
+
+.burger_btn span {
+    width: 25px;
+    height: 3px;
+    background-color: #282828;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .burger_btn { display: flex; }
+    .filters_wrapper { display: none; width: 100%; }
+    .filters_wrapper.show { display: block; margin-bottom: 20px; }
+}
+
+/* СТРОГО ДЛЯ 360px И НИЖЕ */
+@media (max-width: 534px) {
+    .header_block {
+        flex-direction: column !important; /* Колонкой */
+        align-items: center !important;    /* По центру */
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .burger_btn {
+        margin: 0 auto;
+        order: 2; /* Бургер под заголовком */
+    }
+}

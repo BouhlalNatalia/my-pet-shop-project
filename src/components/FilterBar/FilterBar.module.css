@@ -1,0 +1,162 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  width: 100%;
+}
+
+.filter_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (min-width: 1024px) {
+  .filters .filter_item:last-child {
+    margin-left: auto;
+  }
+}
+
+.inputs_group {
+  display: flex;
+  gap: 12px;
+}
+
+
+.input, 
+.selectHeader {
+  height: 40px;
+  padding: 0 16px;
+  border: 1px solid #DDDDDD;
+  border-radius: 12px; 
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  box-sizing: border-box;
+  outline: none;
+  display: flex;
+  align-items: center;
+  transition: border-color 0.2s;
+}
+
+
+.input {
+  width: 110px;
+}
+
+
+.customSelectContainer {
+  position: relative;
+  width: 250px; 
+}
+
+.selectHeader {
+  width: 100%;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.selectHeader.open {
+  border-color: #3399FF;
+}
+
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.3s;
+}
+
+.selectHeader.open .arrow {
+  transform: rotate(180deg);
+}
+
+.selectList {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #DDDDDD;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 5px 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.selectItem {
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.selectItem:hover {
+  background-color: #F0F5FF;
+}
+
+.selectItem.active {
+  background-color: #3399FF !important;
+  color: white !important;
+}
+
+/* Чекбокс */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #3399FF;
+}
+
+
+@media (max-width: 910px) {
+  .filters {
+    justify-content: center; 
+  }
+}
+
+@media (max-width: 534px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .filter_item {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .inputs_group, 
+  .customSelectContainer {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .selectHeader, .input {
+    width: 100%; 
+    height: 44px;
+    border-radius: 22px;
+    justify-content: center;
+  }
+
+  .inputs_group {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .input {
+    width: calc(50% - 6px);
+  }
+}

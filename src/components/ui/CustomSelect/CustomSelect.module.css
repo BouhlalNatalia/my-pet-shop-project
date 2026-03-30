@@ -1,0 +1,128 @@
+/* CustomSelect.module.css */
+
+/* Контейнер всего компонента */
+.selectContainer {
+  position: relative;
+  width: 200px; /* Фиксированная ширина для десктопа */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #282828;
+}
+
+/* ЗАГОЛОВОК СЕЛЕКТА (ПОЛЕ) */
+.selectHeader {
+  height: 40px;
+  padding: 0 40px 0 16px;
+  background-color: #ffffff;
+  border: 1px solid #DDDDDD;
+  border-radius: 20px; /* Скругленные углы поля */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  user-select: none; /* Запрет выделения текста */
+}
+
+/* Эффект при наведении или открытии */
+.selectHeader:hover,
+.selectHeader.open {
+  border-color: #282828;
+}
+
+/* Текст выбранной опции */
+.selectedLabel {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Три точки, если текст не помещается */
+}
+
+/* СТРЕЛОЧКА */
+.arrowIcon {
+  position: absolute;
+  right: 15px;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23282828' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.3s ease; /* Анимация вращения */
+}
+
+/* Поворот стрелочки при открытии меню */
+.selectHeader.open .arrowIcon {
+  transform: rotate(180deg);
+}
+
+/* ВЫПАДАЮЩИЙ СПИСОК (МЕНЮ) */
+.selectList {
+  position: absolute;
+  top: calc(100% + 5px); /* Отступ от поля */
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #DDDDDD;
+  border-radius: 12px; /* СКРУГЛЕННЫЕ УГЛЫ ВЫПАДАЮЩЕГО ОКНА */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ТЕНЬ ДЛЯ ГЛУБИНЫ */
+  padding: 8px 0;
+  margin: 0;
+  list-style: none;
+  z-index: 100; /* Чтобы быть поверх других элементов */
+  
+  /* Анимация появления */
+  animation: slideIn 0.2s ease;
+}
+
+/* ПУНКТ СПИСКА (OPTION) */
+.selectItem {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Эффект при наведении */
+.selectItem:hover {
+  background-color: #f5f5f5; /* Мягкий ховер */
+}
+
+/* Стили для активной (выбранной) опции */
+.selectItem.active {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+/* АНИМАЦИЯ ПОЯВЛЕНИЯ */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+@media (max-width: 534px) {
+  .selectContainer {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .selectHeader {
+    height: 44px;
+    border-radius: 22px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center; /* Центрируем текст */
+  }
+
+  /* Стрелочку на мобилке лучше сдвинуть */
+  .arrowIcon {
+    right: 20px;
+  }
+}

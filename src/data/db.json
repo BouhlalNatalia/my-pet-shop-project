@@ -1,0 +1,271 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Dry & Wet Food",
+      "image": "/category_img/1.jpeg"
+    },
+    {
+      "id": 2,
+      "title": "Litter Boxes & Litter Trays",
+      "image": "/category_img/2.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Baskets & Beds",
+      "image": "/category_img/3.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Toys",
+      "image": "/category_img/4.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Care & Grooming",
+      "image": "/category_img/5.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Snacks & Supplements",
+      "image": "/category_img/6.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Runs & Fencing",
+      "image": "/category_img/7.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Trees & Scratching",
+      "image": "/category_img/8.jpeg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "BELCANDO Mini Dog Food",
+      "price": 35,
+      "discont_price": 23,
+      "description": "Versatile selection: discover the culinary world for your little four-legged friend with 2 types of dry food and 6 types of wet food.",
+      "image": "/product_img/1.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "GranataPet Mini Royal Poultry, Dry Food for Dogs",
+      "price": 26,
+      "discont_price": 15,
+      "description": "Really delicious: The dry dog food for small breeds up to 10 kg allows a natural diet of your four-legged friend.",
+      "image": "/product_img/2.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "title": "animonda Carny Dry Cat Food for Adult Cats",
+      "price": 14,
+      "discont_price": 9,
+      "description": "Premium: 100% fresh, meaty ingredients and offal from the country provide the best proteins.",
+      "image": "/product_img/3.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "title": "Dehner Wild Nature Wet Dog Food",
+      "price": 20,
+      "discont_price": null,
+      "description": "Grain-free premium dog food with wild boar - adult. Original, species-appropriate, 100% natural composition.",
+      "image": "/product_img/4.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 5,
+      "title": "PERFECT FIT Adult Dry Food for Adults",
+      "price": 28,
+      "discont_price": null,
+      "description": "HEALTHY SKIN & HEALTHY COAT: Contains zinc to support healthy skin and coat.",
+      "image": "/product_img/5.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 6,
+      "title": "MERA Pure Sensitive Turkey, Wet Dog Food",
+      "price": 35,
+      "discont_price": null,
+      "description": "Just right: the wet food pure sensitive with turkey is particularly suitable for food-sensitive dogs.",
+      "image": "/product_img/6.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 7,
+      "title": "Edgard & Cooper Dog Food Wet Godfather Dog Adult",
+      "price": 12,
+      "discont_price": null,
+      "description": "Naturally tasty dog food: with plenty of fresh meat, filled with high quality and tasty protein.",
+      "image": "/product_img/7.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 8,
+      "title": "Royal Canin Veterinary Renal | Twin Pack",
+      "price": 40,
+      "discont_price": 35,
+      "description": "Kidney – Royal Canin Veterinary Renal for cats has a special formula with low phosphorus content.",
+      "image": "/product_img/8.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 9,
+      "title": "Dry Dog Food for Adult Dogs",
+      "price": 100,
+      "discont_price": 80,
+      "description": "For adult dogs with normal to increased activity (medium to large breeds).",
+      "image": "/product_img/9.jpeg",
+      "categoryId": 1
+    },
+    {
+      "id": 10,
+      "title": "Feandrea Cat Litter Tray with Lid",
+      "price": 45,
+      "discont_price": null,
+      "description": "Easy to empty and clean: With a pull-out drawer, the cat litter box can be easily emptied.",
+      "image": "/product_img/10.jpeg",
+      "categoryId": 2
+    },
+    {
+      "id": 11,
+      "title": "UBPET C20 Selbstreinigende Katzentoilette",
+      "price": 400,
+      "discont_price": 300,
+      "description": "Grosser Offener Raum: Die automatische Katzentoilette hat einen geräumigen Eingang.",
+      "image": "/product_img/11.jpeg",
+      "categoryId": 2
+    },
+    {
+      "id": 12,
+      "title": "Ultra Cat Litter Tray Self-Cleaning",
+      "price": 600,
+      "discont_price": 450,
+      "description": "Pet safety certification: the TÜV Rheinland ten-layer safety protection system.",
+      "image": "/product_img/12.jpeg",
+      "categoryId": 2
+    },
+    {
+      "id": 13,
+      "title": "Bedsure Washable Dog Basket Medium Dogs",
+      "price": 31,
+      "discont_price": null,
+      "description": "COMFORTABLE ERGONOMIC DESIGN: The Bedsure rectangular dog bed provides excellent comfort.",
+      "image": "/product_img/13.jpeg",
+      "categoryId": 3
+    },
+    {
+      "id": 14,
+      "title": "Bedsure Orthopaedic Dog Bed, Ergonomic Dog Sofa",
+      "price": 42,
+      "discont_price": null,
+      "description": "Dog bed for large dogs is made of flannel blend fabric that ensures lying comfort.",
+      "image": "/product_img/14.jpeg",
+      "categoryId": 3
+    },
+    {
+      "id": 15,
+      "title": "Black Dog Bed, Large Dogs",
+      "price": 150,
+      "discont_price": 50,
+      "description": "Washable cover: The Belune dog bed can be easily cleaned at 40 degrees.",
+      "image": "/product_img/15.jpeg",
+      "categoryId": 3
+    },
+    {
+      "id": 16,
+      "title": "Cat Toy with Real Random Trajectory",
+      "price": 50,
+      "discont_price": 25,
+      "description": "The first automatic cat laser toy with real random trajectory.",
+      "image": "/product_img/16.jpeg",
+      "categoryId": 4
+    },
+    {
+      "id": 17,
+      "title": "Acecy Dog Toy, Chew Toy Dog Almost Indestructible",
+      "price": 15,
+      "discont_price": null,
+      "description": "Squeaky: This toy has a sounding function, when the dog bites the toy, it makes a sound.",
+      "image": "/product_img/17.jpeg",
+      "categoryId": 4
+    },
+    {
+      "id": 18,
+      "title": "Ballistol Animal 28-Piece Towel - Multi-Colour",
+      "price": 13,
+      "discont_price": null,
+      "description": "Ballistol Animal consists of proven natural ingredients and medically pure white oil.",
+      "image": "/product_img/18.jpeg",
+      "categoryId": 5
+    },
+    {
+      "id": 19,
+      "title": "Pet Brush for Short Hair",
+      "price": 20,
+      "discont_price": null,
+      "description": "Easy to clean: cat brush, our pet brush separates animal hair with a single pressure.",
+      "image": "/product_img/19.jpeg",
+      "categoryId": 5
+    },
+    {
+      "id": 20,
+      "title": "ivvi Skin & Coat Omega 3 for Dogs Against Itching",
+      "price": 29,
+      "discont_price": null,
+      "description": "ivvi 's Skin & Coat has been specially developed with veterinarians to support your dog.",
+      "image": "/product_img/20.jpeg",
+      "categoryId": 6
+    },
+    {
+      "id": 21,
+      "title": "Ida Plus Darmbiotic",
+      "price": 25,
+      "discont_price": null,
+      "description": "Active bacteria – The contained bacterial strain \"Bacillus velezensis\" is robust.",
+      "image": "/product_img/21.jpeg",
+      "categoryId": 6
+    },
+    {
+      "id": 22,
+      "title": "Foldable Exercise Pet Playpen",
+      "price": 41,
+      "discont_price": null,
+      "description": "The playpen consists of 8 interconnected panels to provide a running surface.",
+      "image": "/product_img/22.jpeg",
+      "categoryId": 7
+    },
+    {
+      "id": 23,
+      "title": "Puppy Run with 4 Panels and Lockable Door",
+      "price": 39,
+      "discont_price": null,
+      "description": "Box contents: 1 playpen, enclosure with 4 panels and 1 lockable plastic door.",
+      "image": "/product_img/23.jpeg",
+      "categoryId": 7
+    },
+    {
+      "id": 24,
+      "title": "ESTEXO Cat Scratching Post Scratching",
+      "price": 44,
+      "discont_price": 30,
+      "description": "Cat scratching post for cats to play and relax. With a scratching board.",
+      "image": "/product_img/24.jpeg",
+      "categoryId": 8
+    },
+    {
+      "id": 25,
+      "title": "Cat Scratching Post Cat Tree",
+      "price": 39,
+      "discont_price": null,
+      "description": "Cat scratching post, climbing post, with lying surfaces, caves, etc.",
+      "image": "/product_img/25.jpeg",
+      "categoryId": 8
+    }
+  ]
+}

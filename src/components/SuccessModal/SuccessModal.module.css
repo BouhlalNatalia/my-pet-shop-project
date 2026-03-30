@@ -1,0 +1,110 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(4px);
+}
+
+.modal {
+    background-color: #0D50FF;
+    padding: 32px 60px 32px 32px;
+    border-radius: 12px;
+    position: relative;
+    max-width: 530px;
+    width: calc(100% - 40px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.3s ease-out;
+}
+
+.close_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 300;
+    cursor: pointer;
+    line-height: 0.8;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.close_btn:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+
+.modal .content h2 {
+    font-size: clamp(22px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 1.1;
+    color: #FFFFFF;
+    margin: 0 0 24px 0;
+    transition: font-size 0.3s ease;
+}
+
+
+.modal .content p {
+    font-size: clamp(16px, 3vw, 20px);
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    color: #FFFFFF;
+    transition: font-size 0.3s ease;
+}
+
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .modal {
+        padding: 24px 20px;
+    }
+
+    .close_btn {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .modal {
+
+        padding: 40px 20px 24px 20px;
+    }
+
+    .modal .content h2 {
+        font-size: 22px;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    .close_btn {
+        top: 8px;
+        right: 8px;
+    }
+}

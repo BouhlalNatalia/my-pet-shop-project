@@ -1,0 +1,44 @@
+.not_found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 375px;
+    min-height: 60vh;
+}
+
+.error_code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.error_code svg {
+    height: 180px;
+    width: auto;
+}
+
+.dog_image {
+    height: 270px;
+    align-self: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+    text-align: center;
+    color: #282828;
+
+}
+
+.description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #8b8b8b;
+    margin-bottom: 32px;
+}

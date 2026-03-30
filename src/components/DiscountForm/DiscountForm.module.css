@@ -1,0 +1,201 @@
+.discount_section {
+  margin-top: 80px;
+
+}
+
+.discount_card {
+  background: linear-gradient(220deg, #2451c6 0%, #0d50ff 100%);
+  padding: 32px 32px 0 32px;
+  overflow: hidden;
+  max-width: 1440px;
+  border-radius: 12px;
+}
+
+.title {
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.main_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.image_block {
+  flex: 1;
+  min-width: 300px;
+  line-height: 0;
+  font-size: 0;
+}
+
+.content_block {
+  flex: 0 1 440px;
+  padding-bottom: 32px;
+  margin-left: 32px;
+}
+
+.image_block img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.form {
+  gap: 16px;
+  padding: 32px 0;
+}
+
+.form button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+@media (max-width: 1100px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .main_content {
+    gap: 20px;
+  }
+
+  .content_block {
+    flex: 0 1 380px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .content_block {
+    flex: 0 0 400px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_block {
+    order: 2;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .content_block {
+    order: 1;
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .discount_card {
+    padding: 24px 20px 0 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  .main_content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image_block {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .content_block {
+    flex: 1 1 auto;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 24px;
+    order: 1;
+  }
+
+  .form {
+    gap: 12px;
+    padding: 0;
+  }
+
+  .form input {
+    height: 45px;
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+
+  .form button {
+    height: 50px;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .discount_section {
+    margin-top: 40px;
+  }
+
+  .discount_card {
+    padding: 32px 16px 0 16px;
+  }
+
+  .title {
+
+    font-size: clamp(28px, 8vw, 34px);
+    line-height: 1.1;
+    margin-bottom: 24px;
+  }
+
+  .content_block {
+    padding-bottom: 32px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .form input {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .form button {
+    height: auto;
+    min-height: 54px;
+    padding: 12px 20px;
+
+    font-size: clamp(16px, 5vw, 18px);
+    line-height: 1.2;
+    white-space: normal;
+    margin-top: 4px;
+  }
+
+  .image_block {
+
+    max-width: 100%;
+    margin-top: 8px;
+  }
+}

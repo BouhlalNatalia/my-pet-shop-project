@@ -1,0 +1,133 @@
+.footer_section {
+  width: 100%;
+  margin-top: 80px;
+  padding: 0 40px;
+  box-sizing: border-box; /* Чтобы padding не ломал ширину */
+}
+
+.title {
+  font-weight: 700;
+  /* Плавно уменьшается от 64px до 36px */
+  font-size: clamp(36px, 8vw, 64px); 
+  line-height: 110%;
+  color: #282828;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.card {
+  background-color: #f1f3f4;
+  padding: 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: 500;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 130%;
+  color: #8b8b8b;
+  margin-bottom: 16px;
+}
+
+.value {
+  text-decoration: none;
+  font-weight: 600;
+  /* Плавно уменьшается от 40px до 24px */
+  font-size: clamp(24px, 4vw, 40px);
+  line-height: 110%;
+  color: #282828;
+  font-style: normal;
+  word-break: break-word; /* Чтобы длинные почты/телефоны не вылезали */
+}
+
+.icons {
+  display: flex;
+  gap: 16px;
+  margin-top: auto; /* Прижимает иконки к низу карточки */
+}
+
+.icons img {
+  width: 43px;
+  height: 43px;
+  transition: transform 0.2s;
+}
+
+.icons img:hover {
+  transform: scale(1.1);
+}
+
+.map {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+}
+
+/* --- АДАПТИВ (Планшеты и ниже) --- */
+@media (max-width: 992px) {
+  .title {
+    margin-bottom: 24px;
+  }
+  
+  .content {
+    gap: 16px; 
+  }
+  
+  .card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_section {
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+
+  .content {
+    grid-template-columns: 1fr; /* Карточки одна под другой */
+    gap: 12px;
+  }
+
+  .card {
+    align-items: center; 
+    text-align: center;
+  }
+
+  .map {
+    height: 300px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer_section {
+    padding: 0 10px;
+  }
+ .title {
+    text-align: center;
+  }
+  .card {
+    padding: 16px;
+  }
+
+  .value {
+       font-size: 20px; 
+  }
+}

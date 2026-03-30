@@ -1,0 +1,44 @@
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.wrapper{
+  max-width: 1440px;
+  width: 94.45%;
+  margin: 0 auto;
+  
+}
+
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.flex_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.flex_column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px; 
+  }
+}
